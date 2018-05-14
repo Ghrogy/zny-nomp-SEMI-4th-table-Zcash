@@ -1,0 +1,148 @@
+<!-- TODO:
+
+favicon 안들어감
+해결: 그래프스탯 그래프가 안나옴
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>제캐 브랜치 풀</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Shrikhand" rel="stylesheet">
+<link rel="stylesheet" href="/static/bootstrap4-retro.min.css">
+
+<!-- NOMP  -->
+<link rel="icon" type="image/png" href="/static/favicon.png"/>
+
+<link href="https://fonts.googleapis.com/css?family=Song+Myung" rel="stylesheet" type='text/css'>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.4.2/pure-min.css">
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.5/d3.min.js"></script>
+<script src="/static/nvd3.js"></script>
+<link rel="stylesheet" href="/static/nvd3.css">
+
+<script src="/static/main.js"></script>
+<link rel="stylesheet" href="/static/style.css">
+
+  </head>
+  <body style="align-content: center;">
+
+
+
+
+
+
+<!-- TOP NAVIGATION -->
+
+     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-danger">
+      <a class="navbar-brand text-white" href="/"><strong>세미-풀</strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="nav navbar-nav" style="margin: 0px;">
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="/getting_started">시작하기</a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="/stats">그래프 통계</a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="/tbs">상태 테이블</a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="/workers">채굴자 현황</a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="/api">API</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+
+
+
+
+
+<div class="jumbotron bg-secondary text-center text-danger mb-0 radius-0" style="padding-bottom: 0px; padding-top: 7em">
+  <div class="container">
+    <div class="ht-tm-header">
+      <h1 class="display-1 display-xxl text-uppercase" style="margin:.1em 0px 7px">SEMI-POOL</h1>
+      <span class="lead">BitZeny Mining Pool</span>
+
+      <div class="mt-4">
+        <a href="https://github.com/cryptozeny/cpuminer"
+          target="_blank"
+          class="btn btn-danger btn-lg m-2 text-white btn-ht-dl-message">
+        <span class="fa fa-download mr-xl-2"></span>
+          <span>CPU Miner</span>
+        </a>
+
+        <a href="https://github.com/BitzenyCoreDevelopers/bitzeny/releases/tag/z2.0.1"
+          target="_blank"
+          class="btn btn-danger text-white btn-lg m-2">
+        <span class="fa fa-download mr-xl-2"></span>
+          <span>BitZeny Wallet</span>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+<img style="max-width: 100%; height: auto;" src="/static/main-semi1.png" class="rounded mx-auto d-block" alt="main-semi1.png">
+
+</div>
+
+
+
+<main>
+    {{=it.page}}
+</main>
+
+
+
+
+
+<!-- FOOT CONTACTS -->
+     <div class="jumbotron bg-secondary text-center text-danger mb-0 radius-0">
+  <div class="lead">현재 오픈 준비중 입니다! 자세한 사항은 커뮤니티를 참고하세요.</div>
+  
+  <a href="http://gall.dcinside.com/m/bitzeny"
+     target="_blank"
+     class="btn btn-outline-danger ml-1 btn-lg btn-hover-text-secondary my-4 text-left">
+    <span>DC 비트제니 갤러리</span>
+  </a>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<!-- 제이쿼리: 앞에서 제이쿼리 2.1.0 쓰기에 이거(3.3.1) 쓰면안됨 -->
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+<!-- 제이쿼리: 신버젼 쓰지말것 -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+
+  </body>
+
+</html>

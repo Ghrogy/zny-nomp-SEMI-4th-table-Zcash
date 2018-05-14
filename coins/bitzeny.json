@@ -1,0 +1,5 @@
+{
+    "name": "BitZeny",
+    "symbol": "ZNY",
+    "algorithm": "yescrypt"
+}
